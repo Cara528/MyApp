@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VeganBreakfast" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SV1-cq-J28">
+                                <rect key="frame" x="215" y="596" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="蔬食早餐吃什麼?👀" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXJ-BI-EKK">
+                                <rect key="frame" x="101" y="279" width="228" height="32"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
+                                <color key="textColor" red="0.33333333329999998" green="0.67843137249999996" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VeganEat" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z9i-Bu-Dpt">
+                                <rect key="frame" x="-41" y="346" width="512" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="j5o-6a-xVI"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dpz-ul-KGs">
+                                <rect key="frame" x="180" y="611" width="70" height="47.333333333333371"/>
+                                <color key="backgroundColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Dpz-ul-KGs" secondAttribute="height" multiplier="65:44" id="mjI-dN-V2U"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="點這裡">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="askButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zye-5C-ERO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.94509803920000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Z9i-Bu-Dpt" firstAttribute="top" secondItem="EXJ-BI-EKK" secondAttribute="bottom" constant="35" id="DoW-Vu-8VT"/>
+                            <constraint firstItem="EXJ-BI-EKK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nvl-KZ-flS"/>
+                            <constraint firstItem="SV1-cq-J28" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W6D-kt-l6x"/>
+                            <constraint firstItem="SV1-cq-J28" firstAttribute="top" secondItem="Z9i-Bu-Dpt" secondAttribute="bottom" constant="10" id="hIh-7e-cb5"/>
+                            <constraint firstItem="Z9i-Bu-Dpt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iwP-F1-wQo"/>
+                            <constraint firstItem="Dpz-ul-KGs" firstAttribute="top" secondItem="SV1-cq-J28" secondAttribute="bottom" constant="15" id="jWc-aX-Nl0"/>
+                            <constraint firstItem="Dpz-ul-KGs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="niF-Yd-dVZ"/>
+                            <constraint firstItem="Z9i-Bu-Dpt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yo5-FA-A8z"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="breakfastItem" destination="SV1-cq-J28" id="KF6-hH-xkQ"/>
+                        <outlet property="imageView" destination="Z9i-Bu-Dpt" id="Mu2-8w-QT0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26.511627906976745" y="3.218884120171674"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="VeganEat" width="512" height="512"/>
+    </resources>
+</document>
